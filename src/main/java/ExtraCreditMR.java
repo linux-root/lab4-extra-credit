@@ -49,6 +49,13 @@ public class ExtraCreditMR {
 	}
 
 	public static void main(String[] args) throws Exception {
+		if (args.length < 2) {
+			System.err.println("Usage: ExtraCreditMR <input_path> <output_path>");
+			System.err.println("  <input_path>  : Path to input data file");
+			System.err.println("  <output_path> : Path to output directory");
+			System.exit(1);
+		}
+
 		Configuration conf = new Configuration();
 		Job job = Job.getInstance(conf, "ExtraCredit");
 
