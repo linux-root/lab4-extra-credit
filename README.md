@@ -28,7 +28,7 @@ This program extracts and filters air temperature readings from weather data fil
 ## Usage
 
 ```bash
-hadoop jar ExtraCreditMR.jar <input_path> <output_path>
+hadoop jar lab4-extra-credit-1.0.jar ExtraCreditMR <input_path> <output_path>
 ```
 
 ## Input Format
